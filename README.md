@@ -1,5 +1,3 @@
-# actor-name-program-challenge
-
 Actor Name Program v1.7
 =======================
 
