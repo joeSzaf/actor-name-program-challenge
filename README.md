@@ -1,3 +1,11 @@
+# Actor Name Program
+
+## Assumptions
+1. Data was sent via email in a compressed (.gz) format. It is assumed that this is the data format the program will be reading so the code checks if the unzipped data file exists. If it does not, it will look for the compressed version of the file.
+
+
+
+## The challenge
 Actor Name Program v1.7
 =======================
 
@@ -91,7 +99,7 @@ be used more than once.
     Crews, Carl
     Cartman, Xander
     ... 22 more names ...
-     
+
   But this is not (because "Barney" and "Bambam" weren't in the initial list):
 
     Brutananadilewski, Eric
@@ -100,14 +108,14 @@ be used more than once.
     ... 22 more names ...
 
   This is also incorrect (because "Cartman, Eric" is unchanged):        
- 
+
     Brutananadilewski, Xander
     Crews, Carl
     Cartman, Eric
     ... 22 more names ...
 
   This is also incorrect (because "Carl" is used multiple times):        
- 
+
     Brutananadilewski, Xander
     Crews, Carl
     Cartman, Carl
