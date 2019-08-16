@@ -2,6 +2,7 @@
 
 ## Assumptions
 1. Data was sent via email in a compressed (.gz) format. It is assumed that this is the data format the program will be reading so the code checks if the unzipped data file exists. If it does not, it will look for the compressed version of the file.
+2. In the data file, lines that contain the first and last names will start with the last name. Lines without names have a space at the beginning. Therefore, lines that start with a space (" ") will be ignored.
 
 
 
