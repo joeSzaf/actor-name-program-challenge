@@ -16,6 +16,8 @@ const outstream = new stream()
 const rl = readline.createInterface(instream, outstream)
 
 const unqiueNames = {}
+const firstNames = {}
+const lastNames = {}
 
 const regex = /.+?(?=--)/
 
@@ -25,10 +27,14 @@ rl.on('line', (line) => {
     let firstName = name[1].trim()
     let lastName = name[0]
     unqiueNames[[firstName, lastName].join(" ")] = (unqiueNames[firstName, lastName] || 0) + 1
+    firstNames[firstName] = (firstNames[firstName] || 0) + 1
+    lastNames[lastName] = (lastNames[lastName] || 0) + 1
   }
 })
 
 
 rl.on('close', () => {
-  console.log(Object.keys(unqiueNames).length)
+  console.log("Unique names:", Object.keys(unqiueNames).length)
+  console.log("Unique first names:", Object.keys(firstNames).length)
+  console.log("Unique last names:", Object.keys(lastNames).length)
 })
