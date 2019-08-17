@@ -1,10 +1,19 @@
 # Actor Name Program
+## How to run
+0. Make sure `node` and `npm` is installed on the machine
+(made and tested using: `npm v6.10.3` and `node v10.16.0`.)
+
+1. Clone repo or unzip project
+2. Make root of project the current directory
+3. run `npm instal`
+4. run `node app.js`
+
+The results are printed to the terminal.
 
 ## Assumptions
-1. Data was sent via email in a compressed (.gz) format. It is assumed that this is the data format the program will be reading so the code checks if the unzipped data file exists. If it does not, it will look for the compressed version of the file.
+1. Data was sent via email in a compressed (.gz) format. It is assumed that the data will also be zipped. Two version of the code will be provided: one with the unzipping feature and one with the file already decompressed.
 2. In the data file, lines that contain the first and last names will start with the last name. Lines without names have a space at the beginning. Therefore, lines that start with a space (" ") will be ignored.
-
-
+3. The output of the results is to be printed to the console in a readable format.
 
 ## The challenge
 Actor Name Program v1.7
