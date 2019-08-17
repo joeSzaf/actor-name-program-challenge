@@ -22,6 +22,7 @@ const firstNames = {}
 const lastNames = {}
 
 const topFirstNames = []
+const topLastNames = []
 
 const regex = /.+?(?=--)/
 
@@ -31,8 +32,6 @@ function nameExists(name, array) {
     return item.name === name;
   })
 }
-
-// ############
 
 rl.on('line', (line) => {
   if (line[0] !== ' ') {
@@ -44,34 +43,10 @@ rl.on('line', (line) => {
     lastNames[lastName] = (lastNames[lastName] || 0) + 1
 
     const firstNameCount = firstNames[firstName]
+    const lastNameCount = lastNames[lastName]
 
     checkName(firstName, firstNameCount, topFirstNames, firstNames)
-
-    // if (topFirstNames.length === 0) {
-    //   topFirstNames.push({ name: firstName, count: firstNames[firstName] })
-    // } else if (topFirstNames.length < 10) {
-    //   for (let i = 0; i < topFirstNames.length; i ++) {
-    //     if (firstNameCount > topFirstNames[i]) {
-    //       topFirstNames.splice(i, 0, { name: firstName, count: firstNameCount })
-    //       return topFirstNames.pop()
-    //     }
-    //   }
-    //   topFirstNames.push({ name: firstName, count: firstNameCount })
-    // } else if (firstNameCount > topFirstNames[9].count) {
-    //   let indexOfExistingName = topFirstNames.findIndex(item => item.name === firstName)
-    //
-    //   for (let i = 0; i < 10; i ++) {
-    //     if (firstNameCount > topFirstNames[i].count) {
-    //       topFirstNames.splice(i, 0, { name: firstName, count: firstNameCount })
-    //       if (indexOfExistingName === -1) {
-    //         return topFirstNames.pop()
-    //       } else {
-    //         return topFirstNames.splice(indexOfExistingName + 1, 1);
-    //       }
-    //     }
-    //   }
-    // }
-
+    checkName(lastName, lastNameCount, topLastNames, lastNames)
   }
 })
 
@@ -81,4 +56,5 @@ rl.on('close', () => {
   console.log("Unique first names:", Object.keys(firstNames).length)
   console.log("Unique last names:", Object.keys(lastNames).length)
   console.log(topFirstNames)
+  console.log(topLastNames)
 })
