@@ -1,0 +1,83 @@
+Actor Name Program Results
+
+Unique full names: 49157
+Unique last names: 475
+Unique first names: 3007
+
+The ten most common last names (# of occurrences):
+ * Barton (143)
+ * Lang (136)
+ * Ortiz (135)
+ * Hilll (134)
+ * Hills (130)
+ * Terry (129)
+ * Romaguera (128)
+ * Johns (128)
+ * Becker (128)
+ * Batz (127)
+
+The ten most common first names (# of occurrences):
+ * Tara (34)
+ * Andreanne (32)
+ * Keon (31)
+ * Stephania (31)
+ * Ulices (30)
+ * Summer (30)
+ * Manley (30)
+ * Kaycee (30)
+ * Kayley (30)
+ * Dashawn (29)
+
+First 25 unique names:
+ * Mckenna Graham
+ * Garfield Marvin
+ * Mariah McLaughlin
+ * Agustina Lang
+ * Nikko Bradtke
+ * Luis Adams
+ * Matilde Lehner
+ * Anita Ortiz
+ * Berry Koch
+ * Nicolas Cartwright
+ * Elmo Fisher
+ * Gertrude Kunze
+ * Davin Stanton
+ * Constantin O'Conner
+ * Roy Runolfsdottir
+ * Colby Rogahn
+ * Ryley Tromp
+ * Stanley Hoppe
+ * Bethel Shanahan
+ * Samanta Hills
+ * Thad McGlynn
+ * Norma Lynch
+ * Lennie Bahringer
+ * Madison Tillman
+ * Donna Stoltenberg
+
+First 25 unique, modified names:
+ * Mckenna Marvin
+ * Garfield McLaughlin
+ * Mariah Lang
+ * Agustina Bradtke
+ * Nikko Adams
+ * Luis Lehner
+ * Matilde Ortiz
+ * Anita Koch
+ * Berry Cartwright
+ * Nicolas Fisher
+ * Elmo Kunze
+ * Gertrude Stanton
+ * Davin O'Conner
+ * Constantin Runolfsdottir
+ * Roy Rogahn
+ * Colby Tromp
+ * Ryley Hoppe
+ * Stanley Shanahan
+ * Bethel Hills
+ * Samanta McGlynn
+ * Thad Lynch
+ * Norma Bahringer
+ * Lennie Tillman
+ * Madison Stoltenberg
+ * Donna Graham
